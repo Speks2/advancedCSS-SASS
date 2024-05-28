@@ -1,32 +1,86 @@
-body {
-    background-color: rgb(180, 180, 180);
-}
-
-.header-main h1 {
-    color: white;
-}
-
-.footer-main {
-    position: 
-    absolute;
-    border: 4px solid
-    black;
-    top: 200 px;
-    left: 25%;
-    width: 50%;
-    height: 200px;
-    text-align: 
-    center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Jaini&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
 
 body {
-    font-size: 24px;
-    line-height: 200px;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: rgb(227, 225, 225);
+    margin: 0;
+    padding: 0;
 }
 
-.header-main h1 {
+// HEADER STYLING
+.header-main div h1 {
     display: inline-block;
-    margin: 2%;
+    margin-left: 3rem;
     border: 4px solid black;
     font-size: 32px;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background-color: black;
+    padding: 1rem;
+  
+}
+
+// FOOTER STYLING 
+.footer-main {
+    background-color: #1e1e1e;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+.footer-main div h3 {
+    margin: 0;
+    padding: 10px;
+}
+
+// NAVBAR
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1e1e1e;
+    position: absolute;
+    width: 100%;
+    
+}
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.navbar a:hover {
+    background-color: #ff4757;
+    color: #ffffff;
+    border-radius: 5px;
+}
+.logo {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ff4757;
+}
+@keyframes neon {
+    0%, 100% {
+        text-shadow: 0 0 10px #ff4757, 0 0 20px #ff4757, 0 0 30px #ff4757, 0 0 40px #ff4757;
+    }
+    50% {
+        text-shadow: 0 0 20px #ff6b81, 0 0 30px #ff6b81, 0 0 40px #ff6b81, 0 0 50px #ff6b81;
+    }
+}
+.logo {
+    animation: neon 1.5s infinite alternate;
+}
+
+// OTHER 
+h1:hover {
+    color: red;
+}
+h3:hover {
+    color: red;
+}
+.div-main h2 {
+    // soon
 }
