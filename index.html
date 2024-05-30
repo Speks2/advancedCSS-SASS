@@ -6,93 +6,120 @@
     <link rel="stylesheet" href="/assets/css/style.css">
     <script src="./assets/js/app.js"></script>
     <title>The Grateful Band</title>
+    <style>
+        .section-content {
+            display: none;
+        }
+    </style>
 </head>
 <body> 
-      <!-- HEADER MAIN -->
+    <!-- HEADER MAIN -->
     <header class="header-main">
-        <div>
-            <h1>
-             The Grateful
-           </h1>
-        </div>
-        <div class="navbar">
-            <div class="logo"></div>
-            <a href="#home">Home</a>
-            <a href="#band">Band Info</a>
-            <a href="#tours">Tours</a>
-            <a href="#media">Media</a>
-            <a href="#contact">Contact</a>
-        </div>
+        <section>
+            <div>
+                <h1>The Grateful</h1>
+            </div>
+        </section>
+        <section>
+            <div class="navbar">
+                <div class="logo"></div>
+                <a href="#home" onclick="showSection('home')">Home</a>
+                <a href="#band" onclick="showSection('band')">Band Info</a>
+                <a href="#tours" onclick="showSection('tours')">Tours</a>
+                <a href="#albums" onclick="showSection('albums')">Albums</a>
+                <a href="#media" onclick="showSection('media')">Media</a>
+                <a href="#contact" onclick="showSection('contact')">Contact</a>
+                <a href="#signIn" onclick="showSection('signin')">SignIn</a>
+            </div>
+        </section> 
+        <img src="" alt="" id="gallery">
     </header>
   
-    <!-- MIDDLE TEXT -->
-    <div class="div-main">
-        <section>
-            <article>
-                <h4>
-        The Grateful: A Journey Through Music and Time
-        The Band Members
-        
-        The Grateful is an eclectic and vibrant band that has been capturing the hearts of fans worldwide with their unique blend of pop and rock music. The band consists of four incredibly talented members, each bringing their own flair and personality to the group.
-        
-            Alex "The Axe" Johnson - Lead Guitarist
-            Alex, known for his electrifying guitar solos, is the heart and soul of The Grateful. With a background in classical guitar and a love for rock 'n' roll, he fuses technical skill with raw energy to create unforgettable performances.
-        
-            Samantha "Sammy" Rhodes - Lead Vocalist
-            Sammy's powerful voice and charismatic stage presence make her the perfect frontwoman for the band. Her lyrics often explore themes of love, freedom, and rebellion, resonating deeply with fans.
-        
-            Max "The Beat" Thompson - Drummer
-            Max is the rhythmic backbone of The Grateful. His dynamic drumming style, influenced by jazz and rock, provides the pulse that drives the band's energetic sound. Max's infectious enthusiasm keeps both the band and the audience on their toes.
-        
-            Lena "Strings" Martinez - Bassist
-            Lena's groovy bass lines and melodic sensibility add depth and texture to the band's music. Her background in both classical and contemporary music allows her to seamlessly blend different genres, creating a unique soundscape.
-        
-        Albums
-        
-        Over the years, The Grateful has released a series of albums, each marking a distinct chapter in their musical journey.
-        
-            "Dawn of Echoes" (2010)
-            The band's debut album, "Dawn of Echoes," introduced the world to their signature sound. With tracks like "Morning Light" and "Silent Whisper," the album is a blend of introspective lyrics and soaring melodies.
-        
-            "Eternal Summer" (2012)
-            This sophomore album is a celebration of life and music. Featuring hits like "Sunset Dreams" and "Waves of Time," "Eternal Summer" captures the carefree spirit of youth and the joy of endless possibilities.
-        
-            "Midnight Reverie" (2015)
-            "Midnight Reverie" showcases a darker, more mature side of The Grateful. With haunting tracks like "Shadow Dance" and "Moonlit Path," the album explores themes of loss, longing, and redemption.
-        
-            "Neon Nights" (2018)
-            This album is a vibrant explosion of color and sound. Songs like "Electric Heart" and "City Lights" highlight the band's evolution towards a more experimental and electronic sound, while still retaining their rock roots.
-        
-            "Timeless Horizons" (2021)
-            "Timeless Horizons" is a testament to the band's enduring appeal. Featuring anthems like "Infinite Skies" and "Eternal Flame," the album blends nostalgia with forward-thinking creativity, cementing The Grateful's place in music history.
-        
-        Tours
-        
-        The Grateful is known for their spectacular live performances. Each tour is an immersive experience, featuring stunning visuals, intricate animations, and a kaleidoscope of colors that bring their music to life.
-        
-            "Dawn Tour" (2011): The band's first major tour, covering their debut album, was a journey through their early sound and an introduction to their growing fanbase.
-            "Summer Vibes Tour" (2013): A sun-soaked adventure, this tour captured the essence of their second album with vibrant performances and beach-themed sets.
-            "Reverie Nights Tour" (2016): Embracing the mystique of their third album, this tour featured dark, atmospheric stages and a hauntingly beautiful visual experience.
-            "Neon Dreams Tour" (2019): A futuristic spectacle, this tour dazzled audiences with its high-energy performances and cutting-edge light shows.
-            "Horizons Tour" (2022): Celebrating over a decade of music, this tour was a nostalgic yet forward-looking journey, blending the band's classic hits with their latest innovations.
-        
-        Media
-        
-        The Grateful's media presence is as dynamic as their music. Their website features a rich gallery of photos capturing moments from their tours, behind-the-scenes glimpses, and candid shots of the band members. Fans can also enjoy music videos, interviews, and exclusive content that offers a deeper look into the band's world.
-        Conclusion
-        
-        The Grateful isn't just a band; they are an experience. With their innovative approach to music and performance, they continue to push the boundaries of what a live concert and a music album can be. Their website is designed to reflect this ethos, offering fans a vibrant, animated, and colorful portal into the world of The Grateful. From their early days to their latest achievements, The Grateful's journey is one of creativity, passion, and unyielding dedication to their art.
-    </h4> 
-            </article>
-        </section>
+    <!-- MAIN CONTENT -->
+    <article>
+        <div class="div-main">
+            <section id="home" class="section-content">
+            <h1><p>Welcome to The Grateful's official website.</p></h1>
+            <img src="/assets/images/pexels-brett-sayles-1309240.jpg" width="450" height="300" alt="img1">
+            <img src="/assets/images/pexels-jc-siller-8634867.jpg" width="450" height="300" alt="img2">
+            <img src="/assets/images/pexels-josh-sorenson-995301.jpg" width="450" height="300" alt="img3">
+            <img src="/assets/images/pexels-oleg-magni-1813124.jpg" width="450" height="300" alt="img4">
+            <img src="/assets/images/pexels-vishnu-r-nair-1105666.jpg" width="450" height="300" alt="img5">
+            </section>
+            <section id="band" class="section-content">
+               <b>Band Info</b>
+                <h2>
+                    <p>The Grateful is an eclectic and vibrant band that has been capturing the hearts of fans worldwide with their unique blend of pop and rock music. The band consists of four incredibly talented members, each bringing their own flair and personality to the group.
     
-    </div>
-
-    <!-- FOOTER  -->
+                        Alex "The Axe" Johnson - Lead Guitarist
+                        Alex, known for his electrifying guitar solos, is the heart and soul of The Grateful. With a background in classical guitar and a love for rock 'n' roll, he fuses technical skill with raw energy to create unforgettable performances.
+                    
+                        Samantha "Sammy" Rhodes - Lead Vocalist
+                        Sammy's powerful voice and charismatic stage presence make her the perfect frontwoman for the band. Her lyrics often explore themes of love, freedom, and rebellion, resonating deeply with fans.
+                    
+                        Max "The Beat" Thompson - Drummer
+                        Max is the rhythmic backbone of The Grateful. His dynamic drumming style, influenced by jazz and rock, provides the pulse that drives the band's energetic sound. Max's infectious enthusiasm keeps both the band and the audience on their toes.
+                    
+                        Lena "Strings" Martinez - Bassist
+                        Lena's groovy bass lines and melodic sensibility add depth and texture to the band's music. Her background in both classical and contemporary music allows her to seamlessly blend different genres, creating a unique soundscape.</p>
+                </h2>
+                    <h5>
+                        The Grateful isn't just a band; they are an experience. With their innovative approach to music and performance, they continue to push the boundaries of what a live concert and a music album can be. Their website is designed to reflect this ethos, offering fans a vibrant, animated, and colorful portal into the world of The Grateful. From their early days to their latest achievements, The Grateful's journey is one of creativity, passion, and unyielding dedication to their art.
+                    </h5>
+            </section>
+            <section id="tours" class="section-content">
+                <b>Tours</b>
+                <h2><p>The Grateful is known for their spectacular live performances. Each tour is an immersive experience, featuring stunning visuals, intricate animations, and a kaleidoscope of colors that bring their music to life.
+                    <img src="/assets/images/o0tEv2xg.jpg" width="400" height="400" alt="dawn">
+                    <b>"Dawn Tour"(2011):</b> The band's first major tour, covering their debut album, was a journey through their early sound and an introduction to their growing fanbase.
+                    <b>"Summer Vibes Tour" (2013):</b> A sun-soaked adventure, this tour captured the essence of their second album with vibrant performances and beach-themed sets.
+                    <b>"Reverie Nights Tour" (2016):</b> Embracing the mystique of their third album, this tour featured dark, atmospheric stages and a hauntingly beautiful visual experience.
+                    <b>"Neon Dreams Tour" (2019):</b> A futuristic spectacle, this tour dazzled audiences with its high-energy performances and cutting-edge light shows.
+                    <b>"Horizons Tour" (2022):</b> Celebrating over a decade of music, this tour was a nostalgic yet forward-looking journey, blending the band's classic hits with their latest innovations.</p></h2>
+                    <img src="/assets/images/pexels-wendy-wei-1699161.jpg" width="325" height="400" alt="img6">
+                </section>
+            <section id="albums" class="section-content">
+                <b>Albums</b>
+                <h2><p>
+                    Over the years, The Grateful has released a series of albums, each marking a distinct chapter in their musical journey.
+                    
+                    <b>"Dawn of Echoes" (2010)</b>
+                        The band's debut album, "Dawn of Echoes," introduced the world to their signature sound. With tracks like "Morning Light" and "Silent Whisper," the album is a blend of introspective lyrics and soaring melodies.
+                        <img src="/assets/images/RrE8qgac.jpg" width="400" height="400" alt="img11">
+                        <b>"Eternal Summer" (2012)</b>
+                        This sophomore album is a celebration of life and music. Featuring hits like "Sunset Dreams" and "Waves of Time," "Eternal Summer" captures the carefree spirit of youth and the joy of endless possibilities.
+                        <img src="/assets/images/klB5KX2r.jpg" width="400" height="400" alt="img12">
+                        <b>"Midnight Reverie" (2015)</b>
+                        "Midnight Reverie" showcases a darker, more mature side of The Grateful. With haunting tracks like "Shadow Dance" and "Moonlit Path," the album explores themes of loss, longing, and redemption.
+                         <img src="/assets/images/510mXd1Z.jpg" width="400" height="400" alt="img13">
+                        <b>"Neon Nights" (2018)</b>
+                        This album is a vibrant explosion of color and sound. Songs like "Electric Heart" and "City Lights" highlight the band's evolution towards a more experimental and electronic sound, while still retaining their rock roots.
+                        <img src="/assets/images/7ZDY7_cr.jpg" width="400" height="400" alt="img14">
+                        <b> "Timeless Horizons" (2021)</b>
+                        "Timeless Horizons" is a testament to the band's enduring appeal. Featuring anthems like "Infinite Skies" and "Eternal Flame," the album blends nostalgia with forward-thinking creativity, cementing The Grateful's place in music history.</p></h2>
+                        <img src="/assets/images/4pmcU5Pl.jpg" width="400" height="400" alt="img15">
+                    </section>
+            <section id="media" class="section-content">
+                <b>Media</b>
+                <h2><p>The Grateful's media presence is as dynamic as their music. Their website features a rich gallery of photos capturing moments from their tours, behind-the-scenes glimpses, and candid shots of the band members. Fans can also enjoy music videos, interviews, and exclusive content that offers a deeper look into the band's world.</p></h2>
+                <a href="https://x.com/GratefulDead">Twitter/X</a>
+                <a href="https://www.instagram.com/gratefuldead/?hl=en">Instagram</a>
+                <a href="https://www.facebook.com/gratefuldead/">Facebook</a>
+                <a href="https://www.youtube.com/@gratefuldead">YouTube</a>
+            </section>
+            <section id="contact" class="section-content">
+                <b>Contact</b>
+                <h2><p>Get in touch with The Grateful.</p>
+                    <a href="grateful5@gmail.com"> Email: grateful5@gmail.com</a>
+                    <a href=>Phone: 528 825 278 3</a>
+                </h2>
+            </section>
+        </div>
+    </article>
+    <!-- FOOTER -->  
     <footer class="footer-main">
-       <p>
-         <h3>footer</h3>
-       </p>  
+        <h3> <p>&copy; 2024 The Grateful. All rights reserved.</p></h3>
     </footer>
+
 </body>
 </html>

@@ -1,27 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Jaini&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
 
+// BODY MAIN
 body {
     font-size: 16px;
     line-height: 1.5;
-    background-color: rgb(227, 225, 225);
     margin: 0;
     padding: 0;
+    background: linear-gradient(to right, #cb4242ec, #535353a0);
+    font-family: "Outfit", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}
+
+// DIV MAIN
+.div-main {
+    background-color: rgba(243, 243, 243, 0.7); 
+    border-radius: 5px;
+    
+}
 // HEADER STYLING
 .header-main div h1 {
-    display: inline-block;
-    margin-left: 3rem;
-    border: 4px solid black;
-    font-size: 32px;
+    border: 4px solid rgba(255, 255, 255, 0.941);
+    font-size: 3rem;
     text-align: center;
     color: white;
     font-weight: 400;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     background-color: black;
     padding: 1rem;
-  
+    font-family: "Jaini", system-ui;
+    border-radius: 5px;
 }
 
 // FOOTER STYLING 
@@ -29,11 +47,13 @@ body {
     background-color: #1e1e1e;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 1.5rem;
+    position: static;
+    margin-top: auto;
 }
 .footer-main div h3 {
     margin: 0;
-    padding: 10px;
+    padding: 0;
 }
 
 // NAVBAR
@@ -42,14 +62,14 @@ body {
     justify-content: space-around;
     align-items: center;
     background-color: #1e1e1e;
-    position: absolute;
+    position: static;
     width: 100%;
     
 }
 .navbar a {
     color: #ffffff;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 1rem 0.5rem;
     transition: background-color 0.3s, color 0.3s;
 }
 .navbar a:hover {
@@ -70,17 +90,5 @@ body {
         text-shadow: 0 0 20px #ff6b81, 0 0 30px #ff6b81, 0 0 40px #ff6b81, 0 0 50px #ff6b81;
     }
 }
-.logo {
-    animation: neon 1.5s infinite alternate;
-}
 
 // OTHER 
-h1:hover {
-    color: red;
-}
-h3:hover {
-    color: red;
-}
-.div-main h2 {
-    // soon
-}
